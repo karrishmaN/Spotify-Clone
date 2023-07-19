@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #ffff;
+}
+
+:root {
+  --grey: #3c3b3b;
+}
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+/* Spotify */
+h3 {
+  padding: 10px;
+}
+h3 i {
+  color: green;
+  margin-right: 10px;
+}
+
+/*Start of navigation bar*/
+
+.navigation {
+  height: 10vh;
+  border-radius: 30px;
+
+  position: relative;
+}
+.nav ul {
+  list-style: none;
+}
+.nav {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+.nav li {
+  padding-right: 20px;
+  color: grey;
+  margin-top: 10px;
+}
+.nav li:hover {
+  color: white;
+  font-weight: bold;
+}
+.nav input {
+  border: black;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.nav input:hover {
+  background-color: var(--grey);
+  color: white;
+  font-weight: bold;
+}
+/* Start of sidebar */
+
+.cointainer {
+  /*Common class for side & main content */
+
+  width: 400px;
+  height: 100%;
+  padding: 30px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.cointainer :hover {
+  color: grey;
+  font-weight: bold;
+}
+.cointainer ul {
+  list-style: none;
+}
+
+.cointainer li {
+  padding-bottom: 20px;
+}
+
+.cointainer i {
+  padding-right: 20px;
+}
+.cointainer i:hover {
+  color: grey;
+}
+/*your library starts - class=lib*/
+.lib ul {
+  display: flex;
+}
+.lib {
+  position: relative;
+}
+.lib .fa-plus {
+  position: absolute;
+  right: 0;
+}
+/*library-box - parent class of create & browse & lib*/
+
+.scroll-box {
+  overflow-y: scroll;
+  height: 200px;
+  padding-right: 10px;
+}
+/*Start of create-box*/
+.create-box {
+  background-color: var(--grey);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+.create-box input {
+  border: black;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+}
+/*Start of browse-box*/
+.browse-box {
+  background-color: var(--grey);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin-top: 10px;
+}
+.browse-box input {
+  border: black;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+}
+/*Start of bottom*/
+.bottom {
+  font-size: small;
+}
+.bottom-list ul {
+  list-style: none;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bottom-list li {
+  padding-right: 20px;
+  color: grey;
+}
+.bottom-list li:hover {
+  font-weight: bold;
+  color: white;
+}
+button {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  color: white;
+  font-weight: bold;
+}
+button i {
+  width: 10px;
+}
+/*main section starts*/
+.main-section {
+  display: flex;
+}
+.main-cards {
+  /*background-color: red;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-cards .cards {
+  width: 180px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: black;
+}
+.main-cards .cards:hover {
+  background-color: gray;
+}
+.main-cards .multiple-cards {
+  display: flex;
+  min-width: 70vw;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px;
+}
+.main-cards .multiple-cards img {
+  width: 150px;
+}
+.main-cards .multiple-cards h2 {
+  font-size: medium;
+  margin: 5px;
+}
+.main-cards .multiple-cards p {
+  font-size: small;
+  line-height: 1.5;
+}
+
+/*Footer starts*/
+.footer {
+  margin: 10px;
+  height: 10vh;
+  border: 1px solid wheat;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  position: relative;
+  position: sticky;
+  display: flex;
+  width: 100vw;
+}
+.footer input {
+  position: absolute;
+  right: 0;
+  color: black;
+  border: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  margin-right: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.footer input:hover {
+  background-color: var(--grey);
+  color: white;
+  font-weight: bold;
+}
+.footer .para p {
+  margin-top: 5px;
+  color: black;
+  font-weight: bold;
+}
